@@ -1,4 +1,4 @@
-package javalearn;
+package PrintWriterMain;
 
 public class PhoneDTO {
 	String number;
