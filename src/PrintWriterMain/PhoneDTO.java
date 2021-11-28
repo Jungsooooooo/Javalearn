@@ -4,11 +4,13 @@ public class PhoneDTO {
 	String number;
 	String name;
 	String phoneNum;
+	int	   regNum;
 	
-	public PhoneDTO(String number, String name, String phoneNum) {
+	public PhoneDTO(String number, String name, String phoneNum, int regNum) {
 		this.number	 	= number;
 		this.name 		= name;
 		this.phoneNum	= phoneNum;
+		this.regNum		= regNum;
 	}
 	
 	public String getNumber() {
@@ -29,9 +31,15 @@ public class PhoneDTO {
 	public void setPhoneNum(String phoneNum) {
 		this.phoneNum = phoneNum;
 	}
+	public int getregNum() {
+		return regNum;
+	}
+	public void setregNum(int regNum) {
+		this.regNum = regNum;
+	}
 	@Override
 	public String toString() {
-		return number + name+ phoneNum;
+		return number + name+ phoneNum+regNum;
 	
 	
 	}
