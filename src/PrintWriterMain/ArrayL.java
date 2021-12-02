@@ -11,10 +11,10 @@ public class ArrayL {
 
 	public static void main(String[] args) {
 		
-		//String filepath 만들기.
+		String filepath = "C:\\javaexercise\\javalearn\\src\\PrintWriterMain/phonebook.txt";
 
 		try {
-			FileReader fr = new FileReader("C:\\javaexercise\\javalearn\\src\\PrintWriterMain/phonebook.txt");
+			FileReader fr = new FileReader(filepath);
 		BufferedReader br = new BufferedReader(fr);
 		
 		String line= "";
@@ -45,14 +45,11 @@ public class ArrayL {
 		//객체를 다시 스트링으로 바꿔 줘야 한다.
 		PrintWriter pw = new PrintWriter("C:\\javaexercise\\javalearn\\src\\PrintWriterMain/phonebook.txt");
 		for(int i = 0; i<arrayList.size(); i++) {
+		
 			pw.println(arrayList.get(i));
+			
 		}
-			
-			
 			pw.close();
-		
-		
-		
 		
 	}catch(IOException e) {
 		e.printStackTrace();
